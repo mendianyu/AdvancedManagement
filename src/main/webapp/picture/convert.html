@@ -1,0 +1,116 @@
+#@layout()
+#define main()
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>图片业务管理 ---&gt; 图片转换</legend>
+</fieldset>
+<head>
+    <link rel="stylesheet" href="../static/selfDefine.css">
+</head>
+<body>
+<div class="container_self">
+    <img id="image1" src="#(imageSrc1)" alt="请选择图片">
+    <img id="image2" src="#(imageSrc2)" alt="转换后的图片">
+</div>
+
+<div class="container_self" style="margin-top: 30px;">
+    <form id="conversionForm" action="/picture/convert" method="post">
+        <!--图片特效-->
+        <input class="rButton" type="radio" name="effectType" id="effectType1" value="url1" checked="checked"
+               onclick="toggleDropdown('url1', 'url2')" style="width: 18px;height: 18px;">
+        <label for="effectType1" style="font-size: 18px;">图片特效</label>
+
+        <select name="url1" id="url1" style="width:120px ;height: 38px;padding: 0 2px 0 2px; ">
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/selfie_anime">
+                人物动漫化
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/colourize">
+                黑白图像上色
+            </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        <!--图片增强-->
+        <input class="rButton" type="radio" name="effectType" id="effectType2" value="url2"
+               onclick="toggleDropdown('url2', 'url1')">
+        <label for="effectType2" style="font-size: 18px;">图片增强</label>
+
+        <select name="url2" id="url2" style="width:140px;height: 38px;padding: 0 2px 0 2px; " disabled>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/dehaze">
+                图像去雾
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/stretch_restore">
+                拉伸图像修复
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/image_definition_enhance">
+                图像清晰度增强
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/remove_moire">
+                图像去摩尔纹
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/doc_repair">
+                文档图片去底纹
+            </option>
+            <option value="https://aip.baidubce.com/rest/2.0/image-process/v1/denoise">
+                图像去噪
+            </option>
+        </select>
+        <br>
+        <br>
+        <!-- 图片选择-->
+        <input type="file" id="fileInput" accept="image/*" style="width: 200px;">
+        <!-- 提交按钮-->
+        <input type="submit" value="图片转换">
+        <input type="button" value="保存图片" onclick="downloadImg()" style="margin-left: 50px">
+        <br>
+        <!-- 存放图片的src-->
+        <input type="hidden" id="imageSrc" name="imageSrc" value="">
+    </form>
+</div>
+
+</body>
+
+<script>
+    // 获取元素
+    const fileInput = document.getElementById('fileInput');
+    const image1 = document.getElementById('image1');
+    const image2 = document.getElementById('image2');
+    const imageSrcInput = document.getElementById('imageSrc');
+    // 监听文件选择变化
+    fileInput.addEventListener('change', function (event)
+    {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (readerEvent)
+        {
+            image1.src = readerEvent.target.result;
+
+            imageSrcInput.value = readerEvent.target.result;
+        };
+
+        if (file)
+        {
+            reader.readAsDataURL(file);
+        }
+    });
+
+    //使所选按钮对应的下拉框可选，未选的只读
+    function toggleDropdown(selectedBox, readOnlyBox) {
+        const selectedBoxElement = document.getElementById(selectedBox);
+        const readOnlyBoxElement = document.getElementById(readOnlyBox);
+        readOnlyBoxElement.disabled = true;
+        selectedBoxElement.disabled = false;
+    }
+
+    //图片保存
+    function downloadImg() {
+
+        //创建一个虚拟链接
+        const a = document.createElement('a');
+        a.href = image2.src;
+        a.download = 'converted_image.jpg';
+
+        //点击触发下载
+        a.click();
+    }
+</script>
+#end

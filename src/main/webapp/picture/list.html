@@ -1,0 +1,72 @@
+#@layout()
+#define main()
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>图片效果转换记录</legend>
+</fieldset>
+<link rel="stylesheet" href="../static/selfDefine.css">
+<style>
+    .overflow {
+        max-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td, tr {
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+#if( session.loginUser.isAdmin??== 1 )
+<div style="margin-left:20px;margin-right: 20px;">
+
+    <div class="layui-form">
+        <table class="layui-table">
+            <thead>
+            <tr>
+                <th width="60px">用户名</th>
+                <th width="150px">时间</th>
+                <th width="150px">转换效果</th>
+                <!--                <th width="150px">原图</th>-->
+                <!--                <th width="150px">效果图</th>-->
+                <th width="20px">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            #for(x : list.getList())
+            <tr>
+                <td>#(x.id)</td>
+                <td class="overflow">#(x.time)</td>
+                <td>#(x.type)</td>
+                <!--                <td class="overflow">#(x.src1)</td>-->
+                <!--                <td class="overflow">#(x.src2)</td>-->
+                <td style="text-align: center">
+                    <div class="layui-table-cell laytable-cell-1-action">
+                        <a class="layui-btn layui-btn-normal layui-btn-xs" href="/picture/detail/#(x.time)"><i
+                                class="layui-icon layui-icon-edit"></i>查看详情</a>
+
+                    </div>
+                </td>
+            </tr>
+            #end
+            </tbody>
+        </table>
+    </div>
+    #@paginate(list.pageNumber, list.totalPage, "/picture/list/")
+</div>
+#else
+<div class="centered-div">
+    你无权访问本页面
+</div>
+#end
+#end

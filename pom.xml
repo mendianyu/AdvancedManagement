@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>org.example</groupId>  
+  <artifactId>AdvancedManagement</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+  <packaging>war</packaging>
+  <properties> 
+    <maven.compiler.source>8</maven.compiler.source>  
+    <maven.compiler.target>8</maven.compiler.target> 
+  </properties>  
+  <dependencies> 
+    <!-- jfinal -->  
+    <dependency> 
+      <groupId>com.jfinal</groupId>  
+      <artifactId>jfinal</artifactId>  
+      <version>5.0.0</version> 
+    </dependency>  
+    <!-- jfinal-undertow 开发、部署一体化 web 服务器 -->  
+    <dependency> 
+      <groupId>com.jfinal</groupId>  
+      <artifactId>jfinal-undertow</artifactId>  
+      <version>3.0</version> 
+    </dependency>  
+    <!-- cos 文件上传 -->  
+    <dependency> 
+      <groupId>com.jfinal</groupId>  
+      <artifactId>cos</artifactId>  
+      <version>2022.2</version> 
+    </dependency>  
+    <!-- junit 单元测试 -->  
+    <dependency> 
+      <groupId>junit</groupId>  
+      <artifactId>junit</artifactId>  
+      <version>4.13.2</version>  
+      <scope>test</scope> 
+    </dependency>  
+    <!-- 避免控制台输出如下提示信息：
+                     SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+                     项目中实际上用不到这个 jar 包，本 jfinal demo 用不上这个依赖，在此仅为大家
+                     在未来基于 jfinal demo 为模板做开发时做准备工作
+                     注意：eclipse 下可以将 scope 设置为 provided
+                -->  
+    <dependency> 
+      <groupId>org.slf4j</groupId>  
+      <artifactId>slf4j-nop</artifactId>  
+      <version>1.7.29</version>  
+      <!-- 打包前改成 provided，此处使用 compile 仅为支持 IDEA -->  
+      <scope>compile</scope> 
+    </dependency>  
+    <!-- log4j 日志 -->  
+    <dependency> 
+      <groupId>log4j</groupId>  
+      <artifactId>log4j</artifactId>  
+      <version>1.2.17</version> 
+    </dependency>  
+    <!-- mysql 驱动 -->  
+    <dependency> 
+      <groupId>mysql</groupId>  
+      <artifactId>mysql-connector-java</artifactId>  
+      <version>8.0.29</version> 
+    </dependency>  
+    <!-- druid 数据源连接池 -->  
+    <dependency> 
+      <groupId>com.alibaba</groupId>  
+      <artifactId>druid</artifactId>  
+      <version>1.2.8</version> 
+    </dependency>  
+    <!--        <dependency>-->  
+    <!--            <groupId>cn.fsdev</groupId>-->  
+    <!--            <artifactId>jfinal-mail-plugin</artifactId>-->  
+    <!--            <version>3.0</version>-->  
+    <!--        </dependency>-->  
+    <dependency> 
+      <groupId>com.alibaba.fastjson2</groupId>  
+      <artifactId>fastjson2</artifactId>  
+      <version>2.0.38</version> 
+    </dependency> 
+  </dependencies> 
+</project>

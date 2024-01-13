@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60ab6d9f-485c-46b5-af48-2b18b4cf101f" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Environments/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Z9UoVxhinDTdOEWZr5K7kZTf1q" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DataGrid.QuickDoc.View" value="transposed" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="SQL 插入" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/picture" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.373822" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/picture" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/translate" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/men/common" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/user" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.men.picture" />
+      <recent name="com.men.translate" />
+      <recent name="com.men.user" />
+      <recent name="com.men.common.model" />
+      <recent name="com.men.index" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.AppConfig1">
+    <configuration name="AppConfig1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.men.common.AppConfig1" />
+      <module name="AdvancedManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.men.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JFinalDemoGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.men.common.model.JFinalDemoGenerator" />
+      <module name="AdvancedManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.men.common.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonGet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.men.common.JsonGet" />
+      <module name="AdvancedManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.men.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.men.picture.test" />
+      <module name="AdvancedManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.men.picture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.men.picture.test2" />
+      <module name="AdvancedManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.men.picture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.AppConfig1" />
+        <item itemvalue="应用程序.JFinalDemoGenerator" />
+        <item itemvalue="应用程序.test2" />
+        <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.JsonGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="60ab6d9f-485c-46b5-af48-2b18b4cf101f" name="变更" comment="" />
+      <created>1701833963340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701833963340</updated>
+      <workItem from="1701833965074" duration="19063000" />
+      <workItem from="1702036384108" duration="84000" />
+      <workItem from="1702036588107" duration="79000" />
+      <workItem from="1702036701607" duration="45000" />
+      <workItem from="1702036856014" duration="190000" />
+      <workItem from="1702037079181" duration="397000" />
+      <workItem from="1702037669893" duration="962000" />
+      <workItem from="1702038664066" duration="6541000" />
+      <workItem from="1702085132688" duration="57997000" />
+      <workItem from="1702287952810" duration="10917000" />
+      <workItem from="1702301840808" duration="426000" />
+      <workItem from="1702302300251" duration="2002000" />
+      <workItem from="1702338968809" duration="33000" />
+      <workItem from="1702432491786" duration="16461000" />
+      <workItem from="1702526727052" duration="11481000" />
+      <workItem from="1702630659016" duration="2343000" />
+      <workItem from="1703147011005" duration="2739000" />
+      <workItem from="1703218641547" duration="939000" />
+      <workItem from="1703315252274" duration="17710000" />
+      <workItem from="1703382664675" duration="1693000" />
+      <workItem from="1703471577174" duration="2080000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

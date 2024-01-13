@@ -1,0 +1,50 @@
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;" xmlns="http://www.w3.org/1999/html">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-block">
+            <input type="text" name="user.id" value="#(user.id??)" lay-verify="title" autocomplete="off"
+                   placeholder="请输入用户名" class="layui-input" required>
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-block">
+            <input type="text" name="user.password" value="#(user.password??)" lay-verify="title"
+                   autocomplete="off" placeholder="请输入密码" class="layui-input" required>
+        </div>
+    </div>
+
+    #if( session.loginUser.isAdmin??== 1 )
+    <div class="layui-form-item">
+        <label class="layui-form-label">文本翻译剩余字符量</label>
+        <div class="layui-input-block">
+            <input type="text" name="user.tLast" value="#(user.tLast??)" lay-verify="title"
+                   autocomplete="off"  class="layui-input" required>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片转换剩余次数</label>
+        <div class="layui-input-block">
+            <input type="text" name="user.pLast" value="#(user.pLast??)" lay-verify="title"
+                   autocomplete="off"  class="layui-input" required>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否审核</label>
+        <div class="layui-input-block">
+            <input type="text" name="user.checked" value="#(user.checked??)" lay-verify="title"
+                   autocomplete="off" placeholder="0代表未审核，1代表已审核" class="layui-input" required>
+        </div>
+    </div>
+    #end
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+
+</fieldset>

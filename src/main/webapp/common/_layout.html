@@ -1,0 +1,102 @@
+#define layout()
+<head>
+    <meta charset="utf-8">
+    <title>信息管理系统</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">信息管理系统</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+<!--            <li class="layui-nav-item"><a href="/user">首页</a></li>-->
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a>
+                    当前用户：#(session.loginUser.id)
+                </a>
+            </li>
+            <li class="layui-nav-item"><a href="/logout">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:">用户管理</a>
+                    <dl class="layui-nav-child">
+                        #if( session.loginUser.isAdmin??== 1 )
+                        <dd><a href="/user/list">用户列表</a></dd>
+<!--<dd><a href="/user/add">添加用户</a></dd>-->
+                        <dd><a href="/user/search">查询用户</a></dd>
+                        #end
+                        <dd><a href="/user/self">个人信息</a></dd>
+                    </dl>
+                </li>
+            </ul>
+
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:">翻译业务管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/translate/translation">文本翻译</a></dd>
+                        <dd><a href="/translate/search">个人翻译记录查询</a></dd>
+                        <!--通过判断当前用户是否为管理员来动态展示或隐藏某个功能链接-->
+                        #if( session.loginUser.isAdmin??== 1 )
+                        <dd><a href="/translate/list">所有翻译记录</a></dd>
+                        #end
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:">图片业务管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/picture/convert">图片特效/增强</a></dd>
+                        <dd><a href="/picture/search">个人图片处理记录查询</a></dd>
+                        #if(session.loginUser.isAdmin??== 1 )
+                        <dd><a href="/picture/list">所有图片处理记录</a></dd>
+                        #end
+
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        #@main()
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        信息管理系统
+    </div>
+</div>
+
+<script src="/static/layui/layui.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function ()
+    {
+        var element = layui.element;
+
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function ()
+    {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ce0a6af43c652c3267509e86227948e0";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+#end

@@ -1,0 +1,29 @@
+#@layout()
+#define main()
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;" xmlns="http://www.w3.org/1999/html">
+    <legend>添加用户信息</legend>
+</fieldset>
+
+<form class="layui-form" action="/user/save" method="post">
+    #include("_form.html")
+</form>
+
+<script src="/static/layui/layui.js"></script>
+<script>
+    //Demo
+    layui.use('form', function ()
+    {
+        var form = layui.form;
+
+        //监听提交
+        form.render();
+
+        form.on('submit(formDemo)', function (data)
+        {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+</script>
+
+#end

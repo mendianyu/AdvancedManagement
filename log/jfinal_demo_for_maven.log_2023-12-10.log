@@ -1,0 +1,235 @@
+
+2023-12-10 09:28:56
+[ERROR]-[Thread: XNIO-1 task-1]-[com.jfinal.core.ActionHandler.handle()]: com.men.picture.PictureController.convert() : /picture/convert
+com.jfinal.template.TemplateException: "session" can not be null for accessed by "session.loginUser"
+Template: "/common/_layout.html". Line: 18
+	at com.jfinal.template.expr.ast.Field.eval(Field.java:70)
+	at com.jfinal.template.expr.ast.Field.eval(Field.java:60)
+	at com.jfinal.template.stat.ast.Output.exec(Output.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.stat.ast.Define.call(Define.java:105)
+	at com.jfinal.template.stat.ast.Call.exec(Call.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.Template.render(Template.java:57)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:62)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:113)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023-12-10 19:48:14
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 1933433
+
+2023-12-10 20:54:01
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 206251
+
+2023-12-10 20:54:01
+[ERROR]-[Thread: XNIO-1 task-1]-[com.jfinal.core.ActionHandler.handle()]: com.men.translate.TranslateController.detail() : /translate/detail/2023-12-10_20:20:04
+com.jfinal.template.TemplateException: "details" can not be null for accessed by "details.q"
+Template: "/translate/details.html". Line: 47
+	at com.jfinal.template.expr.ast.Field.eval(Field.java:70)
+	at com.jfinal.template.stat.ast.Output.exec(Output.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.stat.ast.Define.call(Define.java:105)
+	at com.jfinal.template.stat.ast.Call.exec(Call.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.stat.ast.Define.call(Define.java:105)
+	at com.jfinal.template.stat.ast.Call.exec(Call.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.Template.render(Template.java:57)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:62)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:113)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023-12-10 20:56:22
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 141111
+
+2023-12-10 20:56:24
+[ERROR]-[Thread: XNIO-1 task-1]-[com.jfinal.core.ActionHandler.handle()]: com.men.translate.TranslateController.detail() : /translate/detail/2023-12-10_20:20:04
+com.jfinal.template.TemplateException: "details" can not be null for accessed by "details.q"
+Template: "/translate/details.html". Line: 47
+	at com.jfinal.template.expr.ast.Field.eval(Field.java:70)
+	at com.jfinal.template.stat.ast.Output.exec(Output.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.stat.ast.Define.call(Define.java:105)
+	at com.jfinal.template.stat.ast.Call.exec(Call.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.stat.ast.Define.call(Define.java:105)
+	at com.jfinal.template.stat.ast.Call.exec(Call.java:49)
+	at com.jfinal.template.stat.ast.StatList.exec(StatList.java:68)
+	at com.jfinal.template.Template.render(Template.java:57)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:62)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:113)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023-12-10 20:57:29
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 64716
+
+2023-12-10 21:01:48
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 173664
+
+2023-12-10 21:19:26
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 994038
+
+2023-12-10 21:25:28
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 356663
+
+2023-12-10 21:29:45
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 256472
+
+2023-12-10 21:32:06
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 88704
+
+2023-12-10 21:34:13
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 71277
+
+2023-12-10 21:37:24
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 139962
+
+2023-12-10 21:38:46
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 81450
+
+2023-12-10 21:41:16
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 128427
+
+2023-12-10 21:43:45
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 107911
+
+2023-12-10 21:47:14
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 62413
+
+2023-12-10 21:53:17
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 104391
+
+2023-12-10 21:58:45
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 67469
+
+2023-12-10 22:04:57
+[WARN]-[Thread: XNIO-1 task-2]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 104422
+
+2023-12-10 22:32:48
+[WARN]-[Thread: XNIO-1 task-4]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 1588684
+
+2023-12-10 22:34:17
+[WARN]-[Thread: XNIO-1 task-4]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 88951
+
+2023-12-10 22:36:07
+[WARN]-[Thread: XNIO-1 task-4]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 93560
+
+2023-12-10 22:38:09
+[WARN]-[Thread: XNIO-1 task-4]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 121922
+
+2023-12-10 22:41:33
+[WARN]-[Thread: XNIO-1 task-1]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 80252
+
+2023-12-10 22:46:11
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 78867
+
+2023-12-10 22:49:07
+[WARN]-[Thread: XNIO-1 task-3]-[com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal()]: discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull, version : 1.2.8, lastPacketReceivedIdleMillis : 169613

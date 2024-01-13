@@ -1,0 +1,43 @@
+#@layout()
+#define main()
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>个人信息</legend>
+</fieldset>
+<style>
+    th, td {
+        text-align: center;
+    }
+</style>
+<div style="margin-left:20px;margin-right: 20px;">
+    <div class="layui-form">
+        <table class="layui-table">
+            <thead>
+            <tr>
+                <th>用户名</th>
+                <th>翻译使用字符量</th>
+                <th>翻译剩余字符量</th>
+                <th>图片转换使用次数</th>
+                <th>图片转换剩余次数</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#(user.id)</td>
+                <td>#(user.tUsed)</td>
+                <td>#(user.tLast)</td>
+                <td>#(user.pUsed)</td>
+                <td>#(user.pLast)</td>
+                <td>
+                    <div class="layui-table-cell laytable-cell-1-action">
+                        <a class="layui-btn layui-btn-normal layui-btn-xs" href="/user/edit/#(user.id)"><i
+                                class="layui-icon layui-icon-edit"></i>编辑</a>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+#end

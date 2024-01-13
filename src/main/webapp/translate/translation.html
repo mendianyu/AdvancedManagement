@@ -1,0 +1,32 @@
+#@layout()
+#define main()
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>翻译管理 ---&gt; 文本翻译</legend>
+</fieldset>
+<div style="margin-left: 20px;">
+
+    <form action="/translate/fanyi" method="post">
+        <textarea cols="100" rows="10" class="layui-input-block" name="q" style="margin-left: 0;">#(q)</textarea>
+
+        <br>
+        <br>
+        源语言
+        <select name="from" style="width:64px ;height: 38px;padding: 0 2px 0 2px; ">
+            <option value="en">英语</option>
+            <option value="zh">汉语</option>
+            <option value="auto">自动</option>
+        </select>
+        &nbsp; &nbsp;
+        目标语言
+        <select name="to" style="width:64px ;height: 38px;padding: 0 2px 0 2px; ">
+            <option value="zh">汉语</option>
+            <option value="en">英语</option>
+        </select>
+        &nbsp; &nbsp;
+        <input class="layui-btn" type="submit">
+    </form>
+    <br>
+    <textarea cols="100" rows="10" class="layui-input-block" name="result" style="margin-left: 0;">#(result)</textarea>
+
+</div>
+#end

@@ -1,0 +1,5 @@
+# config
+jdbcUrl  = jdbc:mysql://localhost:3306/AdvanceManagement?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+username = root
+password = Mendy030628
+devMode  = true
